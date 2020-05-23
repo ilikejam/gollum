@@ -5,5 +5,5 @@ RUN apt-get -y update && \
 RUN gem install github-linguist
 RUN gem install gollum
 WORKDIR /wiki
-ENTRYPOINT ["gollum", "--port", "8000", "--no-edit"]
+ENTRYPOINT ["gollum", "--port", "8000", "--no-edit", "--h1-title"]
 EXPOSE 8000
