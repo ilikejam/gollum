@@ -1,5 +1,7 @@
 FROM ruby
-RUN apt-get -y update && apt-get -y install libicu-dev cmake && rm -rf /var/lib/apt/lists/*
+RUN apt-get -y update && \
+      apt-get install -y --no-install-recommends libicu-dev cmake && \
+      rm -rf /var/lib/apt/lists/*
 RUN gem install github-linguist
 RUN gem install gollum
 WORKDIR /wiki
