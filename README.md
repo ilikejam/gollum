@@ -11,6 +11,7 @@ docker build -t ilikejam/gollum:$scommit .
 docker tag ilikejam/gollum:$scommit ilikejam/gollum:latest
 docker push ilikejam/gollum:$scommit
 docker push ilikejam/gollum:latest
+git push
 ```
 
 ## Deploy
